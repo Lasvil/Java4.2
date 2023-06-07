@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        BmiService service = new BmiService();
+        int BodyMassIndex = (int) service.calculate(84.6, 1.75);
+        System.out.println(BodyMassIndex);
     }
 }
